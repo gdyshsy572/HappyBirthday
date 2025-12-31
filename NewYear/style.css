@@ -1,0 +1,48 @@
+* {
+	animation: cc 4s backwards infinite;
+}
+
+#text {
+	font-size: 40px;
+	border-style: solid;
+	width: 200px;
+	position: fixed;
+	text-align: center;
+
+	animation:
+		mo 15s linear 0.5s infinite,
+		ro 3s linear 0.5s infinite,
+       		cc 5s linear 0.5s infinite;
+}
+
+@keyframes ro {
+	from {transform: rotate(0deg) rotateX(0deg) rotateY(0deg);}
+	to {transform: rotate(360deg) rotateX(360deg) rotateY(0deg);}
+}
+
+@keyframes cc {
+	0% {background-color: red;}
+	20% {background-color: yellow;}
+	30% {background-color: grey;}
+	40% {background-color: orange;}
+	50% {background-color: green;}
+	60% {background-color: purple;}
+	70% {background-color: lightyellow;}
+	80% {background-color: lightblue;}
+	90% {background-color: white;}
+	100% {background-color: blue;}
+}
+
+@keyframes mo {
+	0% {left: 0%; top: 0%;}
+	10% {left: 80%; top: 80%;}
+	20% {left: 0%; top: 0%;}
+	30% {left: 80%; top: 0%;}
+	40% {left: 0%; top: 0%;}
+	50% {left: 0%; top: 80%;}
+	60% {left: 80%; top: 0%;}
+	70% {left: 80%; top: 80%;}
+	80% {left: 8%; top: 80%;}
+	90% {left: 80%; top: 80%;}
+	100% {left: 0%; top: 0%;}
+}
